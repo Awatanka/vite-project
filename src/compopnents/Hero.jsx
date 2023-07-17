@@ -3,7 +3,16 @@ import HeroImage from "../assets/group-hero.png";
 export default function Hero() {
   return (
     <>
-      <img src={HeroImage} />
+      <section className="hero">
+        <img src={HeroImage} className="hero--image" />
+        <div>
+          <h1 className="hero--header">Online Experiences</h1>
+          <p className="hero--text">
+            Join unique interactive activities led by one-of-a-kind hosts—all
+            without leaving home.
+          </p>
+        </div>
+      </section>
     </>
   );
 }

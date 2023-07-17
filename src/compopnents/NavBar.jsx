@@ -4,7 +4,7 @@ export default function NavBar() {
   return (
     <>
       <nav>
-        <img src={Logo} />
+        <img src={Logo} className="nav--logo" />
       </nav>
     </>
   );
