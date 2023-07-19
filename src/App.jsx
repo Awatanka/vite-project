@@ -6,19 +6,7 @@ import dataSet from "./data.jsx";
 import Main from "./compopnents/Main";
 
 function App() {
-  const cards = dataSet.map((item) => (
-    <Card
-      key={item.id}
-      coverImg={item.coverImg}
-      title={item.title}
-      rating={item.rating}
-      reviewCount={item.stats.reviewCount}
-      description={item.description}
-      price={item.price}
-      location={item.location}
-      openSpots={item.openSpots}
-    />
-  ));
+  const cards = dataSet.map((item) => <Card key={item.id} item={item} />);
   return (
     <>
       <NavBar />
